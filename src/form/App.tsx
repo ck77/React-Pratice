@@ -2,7 +2,7 @@ import * as React from "react"
 
 const App: React.FC<{}> = () => {
     return (
-        <React.Fragment>sssssssssssss</React.Fragment>
+        <React.Fragment>ziggurat</React.Fragment>
     )
 }
 
