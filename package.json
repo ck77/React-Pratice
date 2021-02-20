@@ -6,7 +6,7 @@
   "author": "ck77 <kuo.sunnyfruit@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "html5-file-selector": "^2.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
