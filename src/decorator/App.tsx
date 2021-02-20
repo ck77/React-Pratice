@@ -1,6 +1,7 @@
 import React from 'react';
-import SetTitle from './decorator';
+import { SetTitle, SetAppState } from './decorator';
 
+@SetAppState()
 @SetTitle('decorator test')
 class App extends React.Component {
 

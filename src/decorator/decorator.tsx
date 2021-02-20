@@ -1,12 +1,18 @@
 import React from 'react';
 
+interface IApp {
+    Name: string;
+    Id: number;
+}
+
+
 const SetTitle = (title: string) => (WrappedComponent: any) => {
     return class extends React.Component<any> {
 
         constructor(props: any) {
             super(props);
 
-            this.state = { ...this.props, aaa: 1 }
+            console.log('set title constructor')
         }
 
         componentDidMount() {
@@ -16,7 +22,31 @@ const SetTitle = (title: string) => (WrappedComponent: any) => {
 
             console.log('decorator')
             console.log({ ...this.props });
-            console.log({ ...this.state });
+        }
+
+        render() {
+            return (
+                <WrappedComponent {...this.props} />
+            )
+        }
+    }
+}
+
+const SetAppState = () => (WrappedComponent: any) => {
+    return class extends React.Component<any> {
+        constructor(props: any) {
+            super(props);
+
+            const s = {
+                ccc: 123
+            }
+
+            this.state = { ...this.props, ...s }
+        }
+
+        // why need componentDidMount ? 
+        componentDidMount() {
+            console.log('SetAppState decorator')
         }
 
         render() {
@@ -27,4 +57,5 @@ const SetTitle = (title: string) => (WrappedComponent: any) => {
     }
 }
 
-export default SetTitle;
+
+export { SetTitle, SetAppState };
