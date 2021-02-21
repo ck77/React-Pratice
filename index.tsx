@@ -4,7 +4,8 @@ import * as ReactDOM from "react-dom"
 // import App from './src/form/App';
 // import App from './src/pattern1/App';
 // import App from './src/state/App';
-import App from './src/decorator/App';
+// import App from './src/decorator/App';
+import App from './src/ref/App';
 
 ReactDOM.render(
     <App />,
