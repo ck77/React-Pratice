@@ -2,13 +2,13 @@
 import React from "react";
 import { Provider } from "mobx-react";
 import { AppStore } from "./store";
-import User from './User';
+import Count from './Count';
 
 class App extends React.Component {
     render() {
         return (
             <Provider {...AppStore}>
-                <User />
+                <Count />
             </Provider>
         )
     }
