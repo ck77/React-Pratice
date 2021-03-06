@@ -21,6 +21,7 @@ class Count extends Component<IProps> {
                 <div>
                     <p>{store.count}</p>
                 </div>
+
                 <div><button onClick={store.increment}>increment</button></div>
                 <div><button onClick={store.decrease}>decrease</button></div>
 
