@@ -28,9 +28,22 @@ class Count extends Component<IProps> {
                 {
                     store.IsMoreThen50 && <p>more then 50</p>
                 }
+                <Test store={store} />
+
             </div>
         );
     }
 }
+
+const Test = ({ store }: { store: CountStore }) => {
+
+    return (
+        <>
+            <div>store {store.count}</div>
+            <div><button onClick={store.increment}>increment</button></div>
+        </>
+    )
+}
+
 
 export default Count;
