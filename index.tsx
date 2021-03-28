@@ -11,7 +11,8 @@ import * as ReactDOM from "react-dom"
 // import App from './src/mobx-react/basic2/App';
 // import App from './src/context/App';
 // import App from './src/ngm/App';
-import App from './src/ngm-product/App-hooks';
+// import App from './src/ngm-product/App-hooks';
+import App from './src/ngm-product/App-mobx';
 
 
 ReactDOM.render(
